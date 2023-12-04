@@ -1,0 +1,206 @@
+/* Pour le BEM : 
+On nomme en premier la catégorie, ensuite on nomme l'élément qu'on veut
+modifier et enfin on nomme l'élément enfant qu'on va modifier (title, content, 
+quote...). On sépare les éléments par des tirets du 6 entre le premier et le second 
+élément et par des tirets du 8 entre le second et le troisième élément.
+On utilise plus d'id. On les utilise pour javascript.
+Exemple : .category-card__illustration => pour modifier l'image d'une carte*/
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Importation des polices */
+
+@font-face {
+  font-family: "";
+  src: url("");
+}
+
+@font-face {
+  font-family: "";
+  src: url("");
+}
+
+/* Header */
+
+.header-nav__background {
+  background-color: #f5e3ca;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  height: 10vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ajustement de la taille pour un écran de tablette */
+@media (max-width: 768px) {
+  .header-nav__illustration {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* Ajustement de la taille pour un écran de téléphone */
+@media (max-width: 600px) {
+  .header-nav__illustration {
+    width: 30%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav__tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav__tabs a {
+  padding-left: 2.5vw;
+  font-size: 2.5vw;
+  color: var(--444445, rgba(68, 68, 69, 0.70));
+}
+
+.header-nav__tabs a:hover {
+  text-decoration: underline;
+  animation-dura: 0.5s;
+  
+}
+
+/* Projects section */
+
+/* Pour les images, on fait un container où on met toutes les images 
+qui auront une position absolute (elles dépendront du container).
+Ou alors le texte utilise toute la largeur, puis lorsqu'on passe la souris 
+sur la ligne, le texte à gauche (le titre) se décale un peu et l'image s'affiche */
