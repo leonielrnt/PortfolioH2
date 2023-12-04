@@ -137,8 +137,8 @@ table {
 /* Importation des polices */
 
 @font-face {
-  font-family: "";
-  src: url("");
+  font-family: "Wellington Regular";
+  src: url("font/Wellington/Wellington_regular.otf");
 }
 
 @font-face {
@@ -161,15 +161,15 @@ table {
 }
 
 /* Ajustement de la taille pour un écran de tablette */
-@media (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .header-nav__illustration {
-    width: 50%;
+    width: 60%;
     height: auto;
   }
 }
 
 /* Ajustement de la taille pour un écran de téléphone */
-@media (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .header-nav__illustration {
     width: 30%;
     height: auto;
@@ -188,14 +188,13 @@ table {
 
 .header-nav__tabs a {
   padding-left: 2.5vw;
-  font-size: 2.5vw;
+  font-family: Wellington Regular;
+  font-size: 2vw;
   color: var(--444445, rgba(68, 68, 69, 0.70));
 }
 
 .header-nav__tabs a:hover {
   text-decoration: underline;
-  animation-dura: 0.5s;
-  
 }
 
 /* Projects section */
