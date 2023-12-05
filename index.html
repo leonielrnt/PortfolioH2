@@ -13,61 +13,89 @@
         <!-- Header section -->
         <nav class="header-nav__background">
             <div>
-                <img class="header-nav__illustration" src="img/name_header_png.png" alt="">
+                <img class="header-nav__illustration" src="img/name_header_png.png" alt="name">
             </div>
             <div class="header-nav__tabs">
-                <a href=".about-title__main">A propos</a>
-                <a href="">Projets</a>
-                <a href="">Contact</a>
+                <a href="#about-title__main">A propos</a>
+                <a href="#">Projets</a>
+                <a href="#">Contact</a>
             </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="home-section__background">
             <!-- Home section -->
-            <div>
-                <img class="home-img__illustration" src="img/name_png.png" alt="">
+            <div class="home-img__illustration">
+                <img src="img/name_png.png" alt="name">
             </div>
-            <div class="home-text_welcome">Bienvenue sur mon portfolio !</div>
+            <div class="home-text__welcome">Bienvenue sur mon portfolio !</div>
         </section>
-        <section>
+        <section class="about-section__background">
             <!-- About section -->
-            <div>
-                <h1 class="about-title__main">A Propos.</h1>
-                <p class="about-text__description-studies">Etudiante française de 19 ans en 2e année du Programme Grande Ecole à <span>HETIC</span>, j'apprends
+            <div class="about-description__alignment">
+                <h1 id="about-title__main">A Propos.</h1>
+                <p class="about-text__description-studies">Etudiante française de 19 ans en 2e année du Programme Grande
+                    Ecole à <span>HETIC</span>, j'apprends
                     le <span>développement web</span>, le <span>design web</span> et le <span>marketing</span> à travers
                     la réalisation de projets tout au long de l'année, et avec la réalisation de stages.</p>
             </div>
-            <p class="about-text__description-myself">Je suis curieuse, organisée, rigoureuse et impliquée dans ce que j'entreprends. J'aime m'intéresser aux
-                nouvelles technologies, je fais du badminton sur mon temps libre et j'aime écouter de la musique lorsque j'en ai l'occasion.</p>
+            <p class="about-text__description-myself">Je suis curieuse, <span>organisée</span>, rigoureuse et
+                <span>impliquée</span> dans ce que j'entreprends. J'aime m'intéresser aux
+                <span>nouvelles technologies</span>, je fais du <span>badminton</span> sur mon temps libre et j'aime
+                écouter de la <span>musique</span> lorsque j'en ai l'occasion.
+            </p>
             <div>
-                <div>
-                    <h2 class="">Logiciels</h2>
-                    <div>
-                        <img src="" alt="">
-                        <p>Visual Studio Code, Figma, suites Adobe et Office</p>
-                        <p>Git/GitHub</p>
+                <div class="about-card__computer-skills">
+                    <div class="about-content__computer-skills">
+                        <p class="about-text__computer-skills">Visual Studio Code, Figma, suites Adobe et Office</p>
+                        <p class="about-text__computer-skills">Git/GitHub</p>
+                    </div>
+                    <div class="about-description__computer-skills">
+                        <img src="img/desktop.png" alt="desktop">
+                        <h2 class="about-title__computer-skills">Logiciels</h2>
                     </div>
                 </div>
             </div>
             <div>
-                <div>
-                    <div>
-
-                        <p>HTML/CSS, JS, Python, PHP</p>
-                        <p>Symfony</p>
-                        <p>UI/UX design</p>
+                <div class="about-card__skills">
+                    <div class="about-content__skills">
+                        <p class="about-text__skills">HTML/CSS, JS, Python, PHP</p>
+                        <p class="about-text_skills">UI/UX design</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                        <h2>Compétences</h2>
+                    <div class="about-description__skills">
+                        <img src="img/keyboard.png" alt="keyboard">
+                        <h2 class="about-title__skills">Compétences</h2>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <!-- Projects section -->
-
+            <h1>Mes projets</h1>
+            <div>
+                <div>
+                    <h2>Hackathon</h2>
+                    <p>Design</p>
+                </div>
+                <div>
+                    <h2>Marketplace</h2>
+                    <p>Design</p>
+                </div>
+                <div>
+                    <h2>Projet Yearbook</h2>
+                    <p>Développement</p>
+                </div>
+                <div>
+                    <h2>Portfolio</h2>
+                    <p>Développement</p>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </section>
         <section>
             <!-- Contact section -->

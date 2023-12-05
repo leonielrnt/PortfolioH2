@@ -1,11 +1,3 @@
-/* Pour le BEM : 
-On nomme en premier la catégorie, ensuite on nomme l'élément qu'on veut
-modifier et enfin on nomme l'élément enfant qu'on va modifier (title, content, 
-quote...). On sépare les éléments par des tirets du 6 entre le premier et le second 
-élément et par des tirets du 8 entre le second et le troisième élément.
-On utilise plus d'id. On les utilise pour javascript.
-Exemple : .category-card__illustration => pour modifier l'image d'une carte*/
-
 /* Reset CSS */
 
 html,
@@ -160,7 +152,7 @@ table {
   align-items: center;
 }
 
-/* Ajustement de la taille pour un écran de tablette */
+/* Ajustement de la taille de l'image pour un écran de tablette */
 @media screen and (max-width: 1250px) {
   .header-nav__illustration {
     width: 60%;
@@ -168,7 +160,7 @@ table {
   }
 }
 
-/* Ajustement de la taille pour un écran de téléphone */
+/* Ajustement de la taille de l'image pour un écran de téléphone */
 @media screen and (max-width: 630px) {
   .header-nav__illustration {
     width: 30%;
@@ -190,11 +182,226 @@ table {
   padding-left: 2.5vw;
   font-family: Wellington Regular;
   font-size: 2vw;
-  color: var(--444445, rgba(68, 68, 69, 0.70));
+  color: var(--444445, rgba(68, 68, 69, 0.7));
 }
 
 .header-nav__tabs a:hover {
   text-decoration: underline;
+}
+
+/* Home section */
+
+.home-section__background {
+  background: #fbeee6;
+}
+
+.home-img__illustration {
+  padding-top: 8vw;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajustement de la taille de l'image pour un écran de téléphone */
+@media screen and (max-width: 630px) {
+  .home-img__illustration img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+/* Ajustement de la taille de l'image pour un écran de tablette */
+@media screen and (max-width: 1250px) {
+  .home-img__illustration img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.home-text__welcome {
+  font-family: Wellington Regular;
+  font-size: 2.6vw;
+  text-transform: capitalize;
+  padding-top: 3vw;
+  padding-right: 9vw;
+  padding-bottom: 5vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* About section */
+
+.about-section__background {
+  background: #f5e3ca;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  padding-bottom: 4vw;
+}
+
+.about-description__alignment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Adaptation du texte à la taille d'un écran de téléphone */
+@media screen and (max-width: 630px) {
+  .about-description__alignment {
+    padding-top: 5vw;
+
+    flex-wrap: wrap;
+  }
+}
+
+#about-title__main {
+  font-size: 5vw;
+  padding-right: 10vw;
+}
+
+.about-text__description-studies {
+  font-family: Wellington Regular;
+  font-size: 2.4vw;
+  line-height: 3vw;
+  padding-top: 6.5vw;
+  padding-bottom: 6.5vw;
+}
+
+.about-text__description-studies span {
+  font-weight: bold;
+}
+
+.about-text__description-myself {
+  font-family: Wellington Regular;
+  font-size: 2.4vw;
+  line-height: 3vw;
+  padding-bottom: 6.5vw;
+}
+
+.about-text__description-myself span {
+  font-weight: bold;
+}
+
+.about-card__computer-skills {
+  background-color: #fbeee6;
+  margin-bottom: 5vw;
+  border-radius: 1.5vw;
+
+  display: flex;
+}
+
+.about-description__computer-skills {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-description__computer-skills img {
+  padding-bottom: 4.5vw;
+  width: 6.5vw;
+  height: auto;
+}
+
+/* Ajustement de la taille de la carte pour un écran de téléphone */
+@media screen and (max-width: 630px) {
+  .about-description__computer-skills img {
+    width: 20%;
+    height: auto;
+  }
+}
+
+.about-title__computer-skills {
+  font-family: Wellington Regular;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.about-content__computer-skills {
+  padding-left: 4.5vw;
+  max-width: 45vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text__computer-skills:first-of-type {
+  font-family: Wellington Regular;
+  font-size: 2.4vw;
+  line-height: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+}
+
+.about-text__computer-skills:last-of-type {
+  font-family: Wellington Regular;
+  font-size: 2.4vw;
+  line-height: 3vw;
+  padding-bottom: 3vw;
+}
+
+.about-card__skills {
+  background-color: #fbeee6;
+  margin-bottom: 5vw;
+  border-radius: 1.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+
+  display: flex;
+}
+
+.about-content__skills {
+  font-family: Wellington Regular;
+  font-size: 2.4vw;
+  padding-left: 4.5vw;
+  min-width: 45vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text__skills:first-of-type {
+  padding-bottom: 1vw;
+}
+
+.about-description__skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title__skills {
+  font-family: Wellington Regular;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.about-description__skills img {
+  padding-bottom: 4.5vw;
+  width: 6.5vw;
+  height: auto;
+}
+
+/* Ajustement de la taille de l'image pour un écran de téléphone */
+@media screen and (max-width: 630px) {
+  .about-description__skills img {
+    width: 20%;
+    height: auto;
+  }
+}
+
+/* Ajustement de la taille de l'image pour un écran de tablette */
+@media screen and (max-width: 1250px) {
+  .about-description__skills img {
+    width: 20%;
+    height: auto;
+  }
 }
 
 /* Projects section */
