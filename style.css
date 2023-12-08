@@ -257,13 +257,16 @@ table {
 }
 
 #about-title__main {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 5vw;
   padding-right: 10vw;
 }
 
 .about-text__description-studies {
   font-family: Wellington Regular;
-  font-size: 2.4vw;
+  font-size: 2vw;
   line-height: 3vw;
   padding-top: 6.5vw;
   padding-bottom: 6.5vw;
@@ -275,7 +278,7 @@ table {
 
 .about-text__description-myself {
   font-family: Wellington Regular;
-  font-size: 2.4vw;
+  font-size: 2vw;
   line-height: 3vw;
   padding-bottom: 6.5vw;
 }
@@ -317,7 +320,7 @@ table {
 
 .about-title__computer-skills {
   font-family: Wellington Regular;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 
@@ -332,7 +335,7 @@ table {
 
 .about-text__computer-skills:first-of-type {
   font-family: Wellington Regular;
-  font-size: 2.4vw;
+  font-size: 2vw;
   line-height: 3vw;
   padding-top: 3vw;
   padding-bottom: 1vw;
@@ -340,7 +343,7 @@ table {
 
 .about-text__computer-skills:last-of-type {
   font-family: Wellington Regular;
-  font-size: 2.4vw;
+  font-size: 2vw;
   line-height: 3vw;
   padding-bottom: 3vw;
 }
@@ -378,7 +381,7 @@ table {
 
 .about-title__skills {
   font-family: Wellington Regular;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 
@@ -406,7 +409,144 @@ table {
 
 /* Projects section */
 
-/* Pour les images, on fait un container où on met toutes les images 
-qui auront une position absolute (elles dépendront du container).
-Ou alors le texte utilise toute la largeur, puis lorsqu'on passe la souris 
-sur la ligne, le texte à gauche (le titre) se décale un peu et l'image s'affiche */
+.projects-section__background {
+  background-color: #fbeee6;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 4vw;
+}
+
+.projects-section__projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projects-section__title {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
+  padding-top: 5vw;
+  padding-bottom: 3vw;
+}
+
+#desc0 {
+  display: none;
+}
+
+#desc1 {
+  display: none;
+} 
+
+#desc2 {
+  display: none;
+}
+
+#desc3 {
+  display: none;
+}
+
+/* Footer */
+
+.contact-section__background {
+  background-color: #f5e3ca;
+  padding-top: 6vw;
+  padding-bottom: 3vw;
+}
+
+#contact-section__title {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
+  padding-bottom: 3vw;
+  padding-left: 5vw;
+}
+
+hr {
+  border: 0.1vw solid black;
+  width: 90%;
+}
+
+.contact-section__content {
+  padding-top: 2vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-section__title-mail {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2vw;
+}
+
+.contact-section__mail {
+  font-family: wellington regular;
+  font-size: 2vw;
+  color: black;
+  padding-left: 5vw;
+}
+
+.contact-section__mail a {
+  font-family: wellington regular;
+  font-size: 2vw;
+  color: black;
+}
+
+.contact-section__localisation-title {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.contact-section__localisation-text {
+  font-family: Wellington Regular;
+  font-size: 2vw;
+  max-width: 30vw;
+}
+
+.contact-section__links a {
+  font-family: wellington regular;
+  font-size: 2vw;
+  color: black;
+}
+
+.contact-section__links img {
+  padding-right: 5vw;
+}
+
+.contact-section__links:last-of-type {
+  padding-top: 1vw;
+}
+
+/* Ajustement de la taille de l'image pour un écran de téléphone */
+
+@media screen and (max-width: 630px) {
+  .contact-section__links img {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+/* Ajustement de la taille de l'image pour un écran de tablette */
+
+@media screen and (max-width: 1250px) {
+  .contact-section__links img {
+    width: 2vw;
+    height: auto;
+  }
+}
+
+/* Ajustement de la taille de l'image pour un écran d'ordinateur */
+
+@media screen and (min-width: 1250px) {
+  .contact-section__links img {
+    width: 1.5vw;
+    height: auto;
+  }
+}

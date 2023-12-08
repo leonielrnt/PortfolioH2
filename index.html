@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tub0iix.css">
+    <!-- Importation d'une police d'Adobe Fonts -->
 </head>
 
 <body>
@@ -69,56 +71,77 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!-- Projects section -->
-            <h1>Mes projets</h1>
-            <div>
-                <div>
-                    <h2>Hackathon</h2>
-                    <p>Design</p>
+        <section class="projects-section__background">
+            <h1 class="projects-section__title">Mes projets.</h1>
+            <div class="projects-section__projects">
+                <div class="projects-section__container">
+                    <div class="projects-section__1" onclick="showDescription(0)">
+                        <h2 class="projects-section__title-project">Hackathon</h2>
+                        <p class="projects-section__category">Design</p>
+                    </div>
+                    <div class="projects-section__2" onclick="showDescription(1)">
+                        <h2 class="projects-section__title-project">Marketplace</h2>
+                        <p class="projects-section__category">Design</p>
+                    </div>
+                    <div class="projects-section__3" onclick="showDescription(2)">
+                        <h2 class="projects-section__title-project">Projet Yearbook</h2>
+                        <p class="projects-section__category">Développement</p>
+                    </div>
+                    <div class="projects-section__4" onclick="showDescription(3)">
+                        <h2 class="projects-section__title-project">Portfolio</h2>
+                        <p class="projects-section__category">Développement</p>
+                    </div>
                 </div>
-                <div>
-                    <h2>Marketplace</h2>
-                    <p>Design</p>
+                <div class="projects-section__container-cards">
+                    <div class="projects-section__description" id="desc0">
+                        <img src="img/logo_hackathon.png" alt="Hackathon Image">
+                        <p>Description du Hackathon</p>
+                    </div>
+                    <div class="projects-section__description" id="desc1">
+                        <img src="img/marketplace_img.png" alt="Marketplace Image">
+                        <p>Description du Marketplace</p>
+                    </div>
+                    <div class="projects-section__description" id="desc2">
+                        <img src="img/logo_yearbook.svg" alt="Projet Yearbook Image">
+                        <p>Description du Projet Yearbook</p>
+                    </div>
+                    <div class="projects-section__description" id="desc3">
+                        <img src="img/portfolio_image.png" alt="Portfolio Image">
+                        <p>Description du Portfolio</p>
+                    </div>
                 </div>
-                <div>
-                    <h2>Projet Yearbook</h2>
-                    <p>Développement</p>
-                </div>
-                <div>
-                    <h2>Portfolio</h2>
-                    <p>Développement</p>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
             </div>
         </section>
-        <section>
+        <!-- Contact section -->
+        <footer>
             <!-- Contact section -->
-            <div>
-                <h1>Contact.</h1>
+            <div class="contact-section__background">
+                <h1 id="contact-section__title">Contact.</h1>
                 <hr>
-                <div>
-                    <div>
-                        <h3>E-Mail</h3>
+                <div class="contact-section__content">
+                    <div class="contact-section__mail">
+                        <h3 class="contact-section__title-mail">E-Mail</h3>
                         <a href="mailto:leonielaurent.31@gmail.com">leonielaurent.31@gmail.com</a>
-                        <img src="img/arrow.svg" alt="">
                     </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/leonielaurent/" target="_blank">LinkedIn</a>
-                        <img src="img/arrow.svg" alt="">
+                    <div class="contact-section__localisation">
+                        <h3 class="contact-section__localisation-title">Me trouver</h3>
+                        <p class="contact-section__localisation-text">Actuellement en Île-de-France (en étude à Paris)
+                        </p>
                     </div>
-                    <div>
-                        <a href="https://github.com/leonielrnt" target="_blank">GitHub</a>
-                        <img src="img/arrow.svg" alt="">
+                    <div class="contact-section__external-links">
+                        <h3 class="contact-section__links-title">Mes liens de réseaux</h3>
+                        <div class="contact-section__links">
+                            <a href="https://www.linkedin.com/in/leonielaurent/" target="_blank">LinkedIn</a>
+                            <img class="contact-section__arrow" src="img/arrow.svg" alt="">
+                        </div>
+                        <div class="contact-section__links">
+                            <a href="https://github.com/leonielrnt" target="_blank">GitHub</a>
+                            <img class="contact-section__arrow" src="img/arrow.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     </main>
 </body>
 <script src="script.js"></script>
