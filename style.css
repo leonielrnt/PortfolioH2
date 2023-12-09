@@ -90,6 +90,7 @@ video {
   text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -126,16 +127,11 @@ table {
   border-spacing: 0;
 }
 
-/* Importation des polices */
+/* Font import */
 
 @font-face {
   font-family: "Wellington Regular";
   src: url("font/Wellington/Wellington_regular.otf");
-}
-
-@font-face {
-  font-family: "";
-  src: url("");
 }
 
 /* Header */
@@ -152,7 +148,7 @@ table {
   align-items: center;
 }
 
-/* Ajustement de la taille de l'image pour un écran de tablette */
+/* Adjusting the image size for a tablet screen */
 @media screen and (max-width: 1250px) {
   .header-nav__illustration {
     width: 60%;
@@ -160,7 +156,7 @@ table {
   }
 }
 
-/* Ajustement de la taille de l'image pour un écran de téléphone */
+/* Adjusting the image size for a phone screen */
 @media screen and (max-width: 630px) {
   .header-nav__illustration {
     width: 30%;
@@ -202,7 +198,7 @@ table {
   justify-content: center;
 }
 
-/* Ajustement de la taille de l'image pour un écran de téléphone */
+/* Adjusting the image size for a phone screen */
 @media screen and (max-width: 630px) {
   .home-img__illustration img {
     width: 70%;
@@ -210,7 +206,7 @@ table {
   }
 }
 
-/* Ajustement de la taille de l'image pour un écran de tablette */
+/* Adjusting the image size for a tablet screen */
 @media screen and (max-width: 1250px) {
   .home-img__illustration img {
     width: 60%;
@@ -247,7 +243,7 @@ table {
   justify-content: space-between;
 }
 
-/* Adaptation du texte à la taille d'un écran de téléphone */
+/* Adjusting the text for a phone screen */
 @media screen and (max-width: 630px) {
   .about-description__alignment {
     padding-top: 5vw;
@@ -260,7 +256,7 @@ table {
   font-family: "the-seasons", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 5vw;
+  font-size: 4vw;
   padding-right: 10vw;
 }
 
@@ -310,7 +306,7 @@ table {
   height: auto;
 }
 
-/* Ajustement de la taille de la carte pour un écran de téléphone */
+/* Adjusting the card size for a phone screen */
 @media screen and (max-width: 630px) {
   .about-description__computer-skills img {
     width: 20%;
@@ -391,7 +387,7 @@ table {
   height: auto;
 }
 
-/* Ajustement de la taille de l'image pour un écran de téléphone */
+/* Adjusting the image size for a phone screen */
 @media screen and (max-width: 630px) {
   .about-description__skills img {
     width: 20%;
@@ -399,7 +395,7 @@ table {
   }
 }
 
-/* Ajustement de la taille de l'image pour un écran de tablette */
+/* Adjusting the image size for a tablet screen */
 @media screen and (max-width: 1250px) {
   .about-description__skills img {
     width: 20%;
@@ -431,20 +427,143 @@ table {
   padding-bottom: 3vw;
 }
 
+.projects-section__container {
+  font-family: wellington regular;
+}
+
+.projects-section__container hr {
+  margin: 1vw 0vw;
+  width: 100%;
+}
+
+.projects-section__title-project {
+  font-size: 3vw;
+  font-weight: bold;
+  padding-right: 2.8vw;
+}
+
+.projects-section__title-project:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.projects-section__category {
+  font-family: Wellington Regular;
+  font-size: 2vw;
+}
+
+.projects-section__1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-section__2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-section__3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-section__4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #desc0 {
+  border: 1px solid black;
+  padding: 1vw;
+  max-width: 35vw;
   display: none;
+}
+
+#desc0 img {
+  width: 30vw;
+}
+
+#desc0 p {
+  font-family: Wellington Regular;
+  font-size: 1.5vw;
+  padding-top: 1vw;
 }
 
 #desc1 {
-  display: none;
-} 
-
-#desc2 {
+  border: 1px solid black;
+  padding: 1vw;
+  max-width: 35vw;
   display: none;
 }
 
-#desc3 {
+#desc1 img {
+  width: 30vw;
+}
+
+#desc1 p {
+  font-family: Wellington Regular;
+  font-size: 1.5vw;
+  padding-top: 1vw;
+}
+
+#desc2 {
+  border: 1px solid black;
+  padding: 1vw;
+  max-width: 35vw;
   display: none;
+}
+
+#desc2 img {
+  width: 30vw;
+}
+
+#desc2 p {
+  font-family: Wellington Regular;
+  font-size: 1.5vw;
+  padding-top: 1vw;
+}
+
+#desc3 {
+  border: 1px solid black;
+  padding: 1vw;
+  max-width: 35vw;
+  display: none;
+}
+
+#desc3 img {
+  width: 30vw;
+}
+
+#desc3 p {
+  font-family: Wellington Regular;
+  font-size: 1.5vw;
+  padding-top: 1vw;
+}
+
+.projects-section__button {
+  background-color: #f5e3ca;
+  border: none;
+  font-family: Wellington Regular;
+  font-size: 1vw;
+  margin-top: 1vw;
+  padding: 0.4vw 0.8vw;
+  border-radius: 1vw;
+}
+
+.projects-section__button:hover {
+  cursor: pointer;
+}
+
+.projects-section__button:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Footer */
@@ -483,6 +602,13 @@ hr {
   font-weight: 700;
   font-style: normal;
   font-size: 2vw;
+  padding-bottom: 1vw;
+  text-decoration: underline;
+}
+
+.contact-section__mail:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .contact-section__mail {
@@ -502,18 +628,26 @@ hr {
   font-family: "the-seasons", sans-serif;
   font-weight: 700;
   font-size: 2vw;
+  padding-bottom: 1vw;
+  text-decoration: underline;
 }
 
 .contact-section__localisation-text {
   font-family: Wellington Regular;
   font-size: 2vw;
   max-width: 30vw;
+  line-height: 2.5vw;
 }
 
 .contact-section__links a {
   font-family: wellington regular;
   font-size: 2vw;
   color: black;
+}
+
+.contact-section__links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .contact-section__links img {
@@ -524,7 +658,7 @@ hr {
   padding-top: 1vw;
 }
 
-/* Ajustement de la taille de l'image pour un écran de téléphone */
+/* Adjusting the image size for a phone screen */
 
 @media screen and (max-width: 630px) {
   .contact-section__links img {
@@ -533,7 +667,7 @@ hr {
   }
 }
 
-/* Ajustement de la taille de l'image pour un écran de tablette */
+/* Adjusting the image size for a tablet screen */
 
 @media screen and (max-width: 1250px) {
   .contact-section__links img {
@@ -542,11 +676,20 @@ hr {
   }
 }
 
-/* Ajustement de la taille de l'image pour un écran d'ordinateur */
+/* Adjusting the image size for a computer screen */
 
 @media screen and (min-width: 1250px) {
   .contact-section__links img {
     width: 1.5vw;
     height: auto;
   }
+}
+
+.contact-section__links-title {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  padding-right: 5vw;
+  padding-bottom: 1vw;
+  text-decoration: underline;
 }

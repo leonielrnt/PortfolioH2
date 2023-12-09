@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Léonie Laurent</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/tub0iix.css">
     <!-- Importation d'une police d'Adobe Fonts -->
@@ -18,9 +18,9 @@
                 <img class="header-nav__illustration" src="img/name_header_png.png" alt="name">
             </div>
             <div class="header-nav__tabs">
-                <a href="#about-title__main">A propos</a>
-                <a href="#">Projets</a>
-                <a href="#">Contact</a>
+                <a href="#about-section">A propos</a>
+                <a href="#projects-section">Projets</a>
+                <a href="#contact-section">Contact</a>
             </div>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             </div>
             <div class="home-text__welcome">Bienvenue sur mon portfolio !</div>
         </section>
-        <section class="about-section__background">
+        <section class="about-section__background" id="about-section">
             <!-- About section -->
             <div class="about-description__alignment">
                 <h1 id="about-title__main">A Propos.</h1>
@@ -71,7 +71,8 @@
                 </div>
             </div>
         </section>
-        <section class="projects-section__background">
+        <section class="projects-section__background" id="projects-section">
+            <!-- Project section -->
             <h1 class="projects-section__title">Mes projets.</h1>
             <div class="projects-section__projects">
                 <div class="projects-section__container">
@@ -79,14 +80,17 @@
                         <h2 class="projects-section__title-project">Hackathon</h2>
                         <p class="projects-section__category">Design</p>
                     </div>
+                    <hr>
                     <div class="projects-section__2" onclick="showDescription(1)">
                         <h2 class="projects-section__title-project">Marketplace</h2>
                         <p class="projects-section__category">Design</p>
                     </div>
+                    <hr>
                     <div class="projects-section__3" onclick="showDescription(2)">
                         <h2 class="projects-section__title-project">Projet Yearbook</h2>
                         <p class="projects-section__category">Développement</p>
                     </div>
+                    <hr>
                     <div class="projects-section__4" onclick="showDescription(3)">
                         <h2 class="projects-section__title-project">Portfolio</h2>
                         <p class="projects-section__category">Développement</p>
@@ -95,54 +99,60 @@
                 <div class="projects-section__container-cards">
                     <div class="projects-section__description" id="desc0">
                         <img src="img/logo_hackathon.png" alt="Hackathon Image">
-                        <p>Description du Hackathon</p>
+                        <p>Hackathon réalisé en 1ere année en collaboration avec Meta et Publicis sur le thème de
+                            l'Europe, les jeunes et l'environnement.</p>
+                        <button class="projects-section__button">En savoir plus</button>
                     </div>
                     <div class="projects-section__description" id="desc1">
                         <img src="img/marketplace_img.png" alt="Marketplace Image">
-                        <p>Description du Marketplace</p>
+                        <p>Projet de 1ere année, réalisation d'une maquette d'une marketplace sur le thème de Noël.</p>
+                        <button class="projects-section__button">En savoir plus</button>
                     </div>
                     <div class="projects-section__description" id="desc2">
                         <img src="img/logo_yearbook.svg" alt="Projet Yearbook Image">
-                        <p>Description du Projet Yearbook</p>
+                        <p>Projet de 1ere et 2ème année, réalisation du design et du développement (front et back) du
+                            site Yearbook pour l'école.</p>
+                        <button class="projects-section__button">En savoir plus</button>
                     </div>
                     <div class="projects-section__description" id="desc3">
                         <img src="img/portfolio_image.png" alt="Portfolio Image">
-                        <p>Description du Portfolio</p>
+                        <p>Projet de 2e année, réalisation du design et du développement d'un portfolio personnel.</p>
+                        <button class="projects-section__button">En savoir plus</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact section -->
-        <footer>
-            <!-- Contact section -->
-            <div class="contact-section__background">
-                <h1 id="contact-section__title">Contact.</h1>
-                <hr>
-                <div class="contact-section__content">
-                    <div class="contact-section__mail">
-                        <h3 class="contact-section__title-mail">E-Mail</h3>
-                        <a href="mailto:leonielaurent.31@gmail.com">leonielaurent.31@gmail.com</a>
+    </main>
+    <footer id="contact-section">
+        <!-- Footer section -->
+        <div class="contact-section__background">
+            <h1 id="contact-section__title">Contact.</h1>
+            <hr>
+            <div class="contact-section__content">
+                <div class="contact-section__mail">
+                    <h3 class="contact-section__title-mail">E-Mail</h3>
+                    <a href="mailto:leonielaurent.31@gmail.com">leonielaurent.31@gmail.com</a>
+                </div>
+                <div class="contact-section__localisation">
+                    <h3 class="contact-section__localisation-title">Localisation</h3>
+                    <p class="contact-section__localisation-text">Actuellement en Île-de-France (en étude à Paris)
+                    </p>
+                </div>
+                <div class="contact-section__external-links">
+                    <h3 class="contact-section__links-title">Mes liens de réseaux</h3>
+                    <div class="contact-section__links">
+                        <a href="https://www.linkedin.com/in/l%C3%A9onie-laurent-0a9248257/"
+                            target="_blank">LinkedIn</a>
+                        <img class="contact-section__arrow" src="img/arrow.svg" alt="">
                     </div>
-                    <div class="contact-section__localisation">
-                        <h3 class="contact-section__localisation-title">Me trouver</h3>
-                        <p class="contact-section__localisation-text">Actuellement en Île-de-France (en étude à Paris)
-                        </p>
-                    </div>
-                    <div class="contact-section__external-links">
-                        <h3 class="contact-section__links-title">Mes liens de réseaux</h3>
-                        <div class="contact-section__links">
-                            <a href="https://www.linkedin.com/in/leonielaurent/" target="_blank">LinkedIn</a>
-                            <img class="contact-section__arrow" src="img/arrow.svg" alt="">
-                        </div>
-                        <div class="contact-section__links">
-                            <a href="https://github.com/leonielrnt" target="_blank">GitHub</a>
-                            <img class="contact-section__arrow" src="img/arrow.svg" alt="">
-                        </div>
+                    <div class="contact-section__links">
+                        <a href="https://github.com/leonielrnt" target="_blank">GitHub</a>
+                        <img class="contact-section__arrow" src="img/arrow.svg" alt="">
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
 </body>
 <script src="script.js"></script>
 
